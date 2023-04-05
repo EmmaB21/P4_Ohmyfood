@@ -1,0 +1,11 @@
+
+/* Boutons */
+
+.btn {
+    @include btn();
+        &:hover {
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+            opacity: 0.85;
+        }
+}
+      
