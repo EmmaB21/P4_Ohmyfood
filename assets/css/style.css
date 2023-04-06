@@ -19,8 +19,19 @@ body {
 }
 
 .section-title {
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.section-title2 {
+  font-weight: 500;
+  font-size: 18px;
 }
 
 header {
@@ -70,10 +81,35 @@ header .header__location {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
   padding-top: 16px;
+  border: none;
 }
 .btn:hover {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
   opacity: 0.85;
+}
+
+.section-CTA {
+  width: 100%;
+  height: 290px;
+  text-align: center;
+  background-color: #F7F7F7;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-CTA h1 {
+  margin-bottom: 0;
+  padding: 0 48px;
+}
+.section-CTA p {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.section-CTA .btn--CTA {
+  padding-bottom: 16px;
+  width: 218px;
 }
 
 .icone-retour--menu {
