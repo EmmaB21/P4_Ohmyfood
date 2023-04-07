@@ -2,13 +2,13 @@
 
 // Btn-shadow
 
-@mixin btn-shadow ($x, $y, $blur, $spread, $rgba) {
+@mixin btn-shadow ($x: 0, $y: 4px, $blur : 10px, $spread : 0, $rgba : rgba(0, 0, 0, 0.25)) {
     box-shadow: ($x $y $blur $spread $rgba)
 }
 
 // Bouton
 
-@mixin btn ($direction : 0deg, $list-gradient-colors : $list-gradient-colors, $radius: 25px, $height : 50px, $width : 186px, $color : white, $font-size : 16px, $x : 0, $y : 4px, $blur : 10px, $spread : 0, $rgba : rgba(0, 0, 0, 0.25), $align : center, $padding: 16px, $border : none) {
+@mixin btn ($direction : 0deg, $list-gradient-colors : $list-gradient-colors, $radius: 25px, $height : 50px, $width : 186px, $color : white, $font-size : 16px, $x : 0, $y : 4px, $blur : 10px, $spread : 0, $rgba : rgba(0, 0, 0, 0.25), $align : center, $paddingt: 16px, $paddingb: 16px, $border : none) {
     background: linear-gradient($direction, $list-gradient-colors);
     border-radius: ($radius);
     height: ($height);
@@ -17,6 +17,23 @@
     font-size: ($font-size);
     @include btn-shadow ($x, $y, $blur, $spread, $rgba);
     text-align: ($align);
-    padding-top: ($padding);
+    padding-top: ($paddingt);
+    padding-bottom: ($paddingb);
     border: ($border);
+}
+
+// Card
+
+@mixin card ($width : 100%, $height : 251px, $radius : 15px, $background-color : white, $marginb: 18px, $x : 0, $y : 4px, $blur : 15px, $spread : 0, $rgba : rgba(0, 0, 0, 0.1), $position : relative) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    background-color: $background-color;
+    margin-bottom: $marginb;
+    @include btn-shadow ($x, $y, $blur, $spread, $rgba);
+    position: $position;
+    @media (min-width: 1024px) {
+        width : 45%;
+        margin-bottom: 50px;
+    }
 }

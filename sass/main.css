@@ -29,9 +29,17 @@ p {
   font-size: 18px;
 }
 
-.section-title2 {
-  font-weight: 500;
+.card-title {
+  margin: 0;
+  font-weight: 700;
   font-size: 18px;
+}
+
+.card-subtitle {
+  margin: 0;
+  padding: 4px 0;
+  font-weight: 300;
+  font-size: 17px;
 }
 
 header {
@@ -80,11 +88,73 @@ header .header__location {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
   padding-top: 16px;
+  padding-bottom: 16px;
   border: none;
 }
 .btn:hover {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
   opacity: 0.85;
+}
+
+.card {
+  width: 100%;
+  height: 251px;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+}
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.card .card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30%;
+  position: relative;
+  padding: 0 16px;
+  margin: auto;
+}
+.card .card__heart {
+  width: 22px;
+  height: 21px;
+  font-size: 22px;
+  display: block;
+  position: absolute;
+  bottom: 33px;
+  right: 25px;
+}
+
+.card__badge {
+  background-color: #99E2D0;
+  color: #008766;
+  width: 80px;
+  height: 29px;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 2px;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .section-CTA {
@@ -112,13 +182,11 @@ header .header__location {
   margin-bottom: 32px;
 }
 .section-CTA .btn--CTA {
-  padding-bottom: 16px;
   width: 218px;
 }
 
 .section-HowTo {
-  padding: 20px;
-  height: 440px;
+  padding: 20px 20px 50px 20px;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -136,7 +204,8 @@ header .header__location {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.section-HowTo .HowTo__instruction {
+
+.HowTo__instruction {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -146,11 +215,11 @@ header .header__location {
   position: relative;
 }
 @media (min-width: 1024px) {
-  .section-HowTo .HowTo__instruction {
+  .HowTo__instruction {
     width: 32%;
   }
 }
-.section-HowTo .HowTo__instruction .instructions__chiffre {
+.HowTo__instruction .instructions__chiffre {
   width: 24px;
   height: 24px;
   position: absolute;
@@ -163,7 +232,7 @@ header .header__location {
   padding-top: 4px;
   font-size: 14px;
 }
-.section-HowTo .HowTo__instruction .instructions__content {
+.HowTo__instruction .instructions__content {
   background-color: #F7F7F7;
   border-radius: 20px;
   width: 322px;
@@ -174,8 +243,35 @@ header .header__location {
   padding-left: 36px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
-.section-HowTo .HowTo__instruction .instructions__content i {
-  padding-right: 24px;
+.HowTo__instruction .instructions__content i {
+  padding-right: 28px;
+  color: #7e7e7e;
+  font-size: 18px;
+}
+.HowTo__instruction .instructions__content .fa-store {
+  color: #9356dc;
+}
+
+.section-cards {
+  padding: 36px 20px;
+  width: 100%;
+  background-color: #F7F7F7;
+}
+@media (min-width: 1024px) {
+  .section-cards {
+    padding: 30px 12%;
+  }
+}
+.section-cards .cards__ctn {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .section-cards .cards__ctn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .icone-retour--menu {
