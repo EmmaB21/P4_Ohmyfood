@@ -269,7 +269,7 @@ footer i {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   padding-bottom: 25px;
   margin-left: 20px;
   position: relative;
@@ -279,21 +279,9 @@ footer i {
     width: 32%;
   }
 }
-.HowTo__instruction .instructions__chiffre {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 25px;
-  left: -12px;
-  border-radius: 60px;
-  background-color: #9356dc;
-  color: white;
-  text-align: center;
-  padding-top: 4px;
-  font-size: 14px;
-}
 .HowTo__instruction .instructions__content {
   background-color: #F7F7F7;
+  position: relative;
   border-radius: 20px;
   width: 322px;
   height: 72px;
@@ -310,6 +298,21 @@ footer i {
 }
 .HowTo__instruction .instructions__content .fa-store {
   color: #9356dc;
+}
+.HowTo__instruction .instructions__chiffre {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -12px;
+  margin: auto;
+  border-radius: 60px;
+  background-color: #9356dc;
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 14px;
 }
 
 .section-cards {
