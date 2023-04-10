@@ -84,7 +84,7 @@
         height: 72px;
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         padding-left: 36px;
         @include btn-shadow (0, 4px, 15px, 0, rgba(0, 0, 0, 0.15));
 

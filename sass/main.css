@@ -14,6 +14,10 @@ body {
   min-width: 320px;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -78,6 +82,64 @@ header .header__location {
   z-index: -1;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 22px 25px;
+}
+footer .logo {
+  font-family: shrikhand;
+  margin-top: 4px;
+}
+@media (min-width: 1024px) {
+  footer .logo {
+    margin-bottom: 4px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+footer ul {
+  font-size: 16px;
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@media (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 56px;
+  }
+}
+footer li {
+  padding-bottom: 8px;
+  padding-right: 12px;
+  font-weight: 400;
+}
+footer a {
+  color: white;
+}
+footer i {
+  padding-right: 12px;
+  font-size: 12px;
+}
+@media (min-width: 1024px) {
+  footer {
+    height: 114px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 70px;
+    padding-top: 32px;
+  }
+}
+
 .btn {
   background: linear-gradient(0deg, #9356dc, #FF79DA);
   border-radius: 25px;
@@ -120,7 +182,6 @@ header .header__location {
   border-top-right-radius: 15px;
 }
 .card a {
-  text-decoration: none;
   color: black;
 }
 .card .card__content {
@@ -239,7 +300,7 @@ header .header__location {
   height: 72px;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding-left: 36px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }

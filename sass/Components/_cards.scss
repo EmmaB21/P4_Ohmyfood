@@ -1,5 +1,6 @@
 .card {
     @include card ();
+
     & img {
         object-fit: cover;
         width: 100%;
@@ -7,10 +8,11 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
+
     & a {
-        text-decoration: none;
         color: black;
     }
+
     & .card__content {
         display: flex;
         flex-direction: column;
@@ -20,17 +22,15 @@
         padding: 0 16px;
         margin: auto;
     }
-        & .card__heart {
-            width: 22px;
-            height: 21px;
-            font-size: 22px;
-            display: block;
-            position: absolute;
-            bottom: 33px;
-            right: 25px;}
 
+    & .card__heart {
+        width: 22px;
+        height: 21px;
+        font-size: 22px;
+        display: block;
+        position: absolute;
+        bottom: 33px;
+        right: 25px;
+    }
 
-        }
-        
-    
-    
+}
