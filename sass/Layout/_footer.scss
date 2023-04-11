@@ -25,6 +25,7 @@ footer {
         padding-left: 0;
         margin: 0;
         list-style-type: none;
+        font-weight: 400;
 
         @media (min-width : 1024px) {
             display: flex;
@@ -36,7 +37,10 @@ footer {
     & li {
         padding-bottom: 8px;
         padding-right: 12px;
-        font-weight: 400;
+    }
+
+    & .list__partner {
+        font-weight: 500;
     }
 
     & a {

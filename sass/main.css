@@ -108,6 +108,7 @@ footer ul {
   padding-left: 0;
   margin: 0;
   list-style-type: none;
+  font-weight: 400;
 }
 @media (min-width: 1024px) {
   footer ul {
@@ -119,7 +120,9 @@ footer ul {
 footer li {
   padding-bottom: 8px;
   padding-right: 12px;
-  font-weight: 400;
+}
+footer .list__partner {
+  font-weight: 500;
 }
 footer a {
   color: white;
@@ -152,7 +155,7 @@ footer i {
   padding-top: 16px;
   padding-bottom: 16px;
   border: none;
-  transition: opacity 400ms;
+  transition: opacity 300ms;
 }
 .btn:hover {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
@@ -194,7 +197,7 @@ footer i {
   padding: 0 16px;
   margin: auto;
 }
-.card .card__heart {
+.card .card__heart i {
   width: 22px;
   height: 21px;
   font-size: 22px;
@@ -202,6 +205,17 @@ footer i {
   position: absolute;
   bottom: 33px;
   right: 25px;
+}
+.card .heart--solid {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(0deg, #9356dc, #FF79DA);
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.card .heart--solid:hover {
+  opacity: 1;
 }
 
 .card__badge {

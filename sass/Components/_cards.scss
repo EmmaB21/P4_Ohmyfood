@@ -23,14 +23,15 @@
         margin: auto;
     }
 
-    & .card__heart {
-        width: 22px;
-        height: 21px;
-        font-size: 22px;
-        display: block;
-        position: absolute;
-        bottom: 33px;
-        right: 25px;
+    & .card__heart i {
+        @include heart ();
     }
 
+    & .heart--solid {
+        @include heartsolid ();
+    }
+
+    & .heart--solid:hover {
+        opacity: 1;
+    }
 }
