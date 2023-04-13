@@ -36,6 +36,7 @@ p {
 .course--title {
     @include typo (18px, 500);
     margin-bottom: 4px;
+    margin-top: 8px;
 }
 
 .course--subtitle {
