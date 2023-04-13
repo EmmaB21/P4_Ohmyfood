@@ -1,22 +1,23 @@
-
 .rest-ctn {
     position: relative;
+    background-color: $background-color;
 }
 
 .photo img {
-        width: 100%;
-        height: 275px;
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+
+    @media (min-width: 1024px) {
+        height: 380px;
         object-fit: cover;
-        @media (min-width: 1024px) {
-            height: 380px;
-            object-fit: cover;
-        }
     }
+}
 
 .menu {
     width: 100%;
     margin: 0;
-    padding: 0 16px;
+    padding: 0 12px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,31 +25,72 @@
     top: -48px;
     background-color: $background-color;
     border-radius: 40px 40px 0 0;
+
     @media (min-width: 1024px) {
-        width : 1020px;
+        width: 1020px;
         margin: auto;
     }
+
     &__title {
         width: 341px;
         padding-top: 16px;
         padding-left: 16px;
-        position: relative;  
+        position: relative;
     }
 
     .menu__title i {
-        @include heart ();
-        bottom: 28px;
+        @include heart ($bottom: 28px);
+
         &.heart--solid {
             @include heartsolid ();
+
             &:hover {
                 opacity: 1;
             }
         }
     }
+
+    &__card {
+        @include card-menu ();
+
+        .card__title {
+            border-bottom: 3px solid $secondary-color;
+            width: 40px;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 70%;
+        }
+    }
+
+    .card__course {
+        @include card ($height : auto, $marginb : 12px);
+        padding-left: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (min-width: 1024px) {
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .course--price {
+            display: flex;
+            align-items: flex-end;
+            padding-right: 12px;
+            padding-bottom: 15px;
+        }
+    }
+
 }
 
-
-
-
-
-
+.btn-ctn {
+    height: 130px;
+    margin-top: -56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

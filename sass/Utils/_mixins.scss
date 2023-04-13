@@ -1,4 +1,9 @@
+// Typo
 
+@mixin typo ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
 
 // Btn-shadow
 
@@ -8,7 +13,7 @@
 
 // Bouton
 
-@mixin btn ($direction : 0deg, $list-gradient-colors : $list-gradient-colors, $radius: 25px, $height : 50px, $width : 186px, $color : white, $font-size : 16px, $x : 0, $y : 4px, $blur : 10px, $spread : 0, $rgba : rgba(0, 0, 0, 0.25), $align : center, $paddingt: 16px, $paddingb: 16px, $border : none, $transition: opacity 300ms) {   
+@mixin btn ($direction : 0deg, $list-gradient-colors : $list-gradient-colors, $radius: 25px, $height : 50px, $width : 186px, $color : white, $font-size : 16px, $x : 0, $y : 4px, $blur : 10px, $spread : 0, $rgba : rgba(0, 0, 0, 0.25), $align : center, $paddingt: 16px, $paddingb: 16px, $border : none, $transition: opacity 300ms) {
     background: linear-gradient($direction, $list-gradient-colors);
     border-radius: ($radius);
     height: ($height);
@@ -23,7 +28,7 @@
     transition: ($transition);
 }
 
-@mixin btnhover ($x : 0, $y: 4px, $blur: 15px, $spread: 0, $rgba : rgba(0,0,0,0.35), $opacity: 0.85) {
+@mixin btnhover ($x : 0, $y: 4px, $blur: 15px, $spread: 0, $rgba : rgba(0, 0, 0, 0.35), $opacity: 0.85) {
     @include btn-shadow ($x, $y, $blur, $spread, $rgba);
     opacity: ($opacity);
 }
@@ -38,8 +43,9 @@
     margin-bottom: $marginb;
     @include btn-shadow ($x, $y, $blur, $spread, $rgba);
     position: $position;
+
     @media (min-width: 1024px) {
-        width : 45%;
+        width: 45%;
         margin-bottom: 50px;
     }
 }
@@ -47,19 +53,27 @@
 // Heart
 
 @mixin heart ($font-size: 24px, $display: block, $position: absolute, $bottom: 32px, $right: 25px) {
-    font-size : ($font-size);
-    display: ($display);
-    position: ($position);
-    bottom: ($bottom);
-    right: ($right);
+    font-size:$font-size;
+    display: $display;
+    position: $position;
+    bottom: $bottom;
+    right: $right;
 }
 
 @mixin heartsolid ($color : transparent, $bg-clip : text, $direction : 180deg, $list-gradient-colors : $list-gradient-colors, $opacity : 0, $transition : opacity 400ms) {
-        color: $color;
-        background-clip: $bg-clip;
-        -webkit-background-clip: $bg-clip;
-        background-image: linear-gradient($direction, $list-gradient-colors);
-        opacity: $opacity;
-        transition: $transition;
-    }
+    color: $color;
+    background-clip: $bg-clip;
+    -webkit-background-clip: $bg-clip;
+    background-image: linear-gradient($direction, $list-gradient-colors);
+    opacity: $opacity;
+    transition: $transition;
+}
 
+@mixin card-menu ($width: 360px, $margint : 30px, $padding: (0 8px), $display: flex, $flex-dir : column, $align-it: flex-start) {
+    width: $width;
+    margin-top: $margint;
+    padding: $padding;
+    display: $display;
+    flex-direction: $flex-dir;
+    align-items: $align-it;
+}

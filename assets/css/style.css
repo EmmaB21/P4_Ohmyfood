@@ -23,33 +23,50 @@ a {
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  font-weight: 700;
 }
 
 p {
-  font-weight: 300;
   font-size: 18px;
+  font-weight: 300;
 }
 
 .card-title {
-  margin: 0;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .card-subtitle {
+  font-size: 17px;
+  font-weight: 300;
   margin: 0;
   padding: 4px 0;
-  font-weight: 300;
-  font-size: 17px;
 }
 
 .menu-title {
-  font-family: shrikhand;
   font-size: 28px;
   font-weight: 400;
+  font-family: shrikhand;
+}
+
+.card__title {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.course--title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.course--subtitle {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0;
 }
 
 header {
@@ -374,6 +391,7 @@ footer i {
 
 .rest-ctn {
   position: relative;
+  background-color: #F6F6F6;
 }
 
 .photo img {
@@ -391,7 +409,7 @@ footer i {
 .menu {
   width: 100%;
   margin: 0;
-  padding: 0 16px;
+  padding: 0 12px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -416,9 +434,8 @@ footer i {
   font-size: 24px;
   display: block;
   position: absolute;
-  bottom: 32px;
-  right: 25px;
   bottom: 28px;
+  right: 25px;
 }
 .menu .menu__title i.heart--solid {
   color: transparent;
@@ -430,6 +447,64 @@ footer i {
 }
 .menu .menu__title i.heart--solid:hover {
   opacity: 1;
+}
+.menu__card {
+  width: 360px;
+  margin-top: 30px;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu__card .card__title {
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+@media (min-width: 1024px) {
+  .menu__card {
+    width: 70%;
+  }
+}
+.menu .card__course {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .menu .card__course {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu .card__course {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+.menu .card__course .course--price {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 12px;
+  padding-bottom: 15px;
+}
+
+.btn-ctn {
+  height: 130px;
+  margin-top: -56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

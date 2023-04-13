@@ -5,31 +5,40 @@
 }
 
 .section-title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    @include typo (24px, 700);
 }
 
 p {
-    font-weight: 300;
-    font-size: 18px;
+    @include typo (18px, 300);
 }
 
 .card-title {
+    @include typo (18px, 700);
     margin: 0;
-    font-weight: 700;
-    font-size: 18px;
 }
 
 .card-subtitle {
+    @include typo (17px, 300);
     margin: 0;
     padding: 4px 0;
-    font-weight: 300;
-    font-size: 17px;
 }
 
 .menu-title {
+    @include typo (28px, 400);
     font-family: shrikhand;
-    font-size: 28px;
-    font-weight: 400;
+}
+
+.card__title {
+    @include typo (16px, 300);
+    margin: 0;
+}
+
+.course--title {
+    @include typo (18px, 500);
+    margin-bottom: 4px;
+}
+
+.course--subtitle {
+    @include typo (15px, 300);
+    margin-top: 0;
 }
