@@ -52,6 +52,10 @@
 
     &__card {
         @include card-menu ();
+        animation: menu__card 1000ms both;
+        transform-origin: left;
+        transform: translateX(-200px);
+    
 
         .card__title {
             border-bottom: 3px solid $secondary-color;
@@ -72,55 +76,71 @@
         flex-direction: row;
         justify-content: space-between;
         overflow: hidden;
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+            animation-delay: 350ms * $i;
+        }
+    }
+        animation: card__course 1300ms 800ms both ease-in-out;
+
+
+
         &:hover {
-            & > .course--price {
-               & + .course--check {
-                  margin-right : 0;
-               }
+            &>.course--price {
+                &+.course--check {
+                    margin-right: 0;
+                }
             }
-         }
-    
+        }
+
         @media (min-width: 1024px) {
             width: 100%;
             margin-bottom: 12px;
         }
 
         .course__name {
-            white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
-        }
 
-        .course--price {
-            display: flex;
-            align-items: flex-end;
-            margin-left: auto;
-            padding-right: 12px;
-            padding-bottom: 15px; 
-        }
+            & .course--subtitle {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
 
-        .course--check {
-                transition: margin-right 800ms ease-in-out;
-                display : flex;
-                justify-content: center;
-                align-items: center;
-                background-color: $secondary-color;
-                width : 60px;
-                margin-right : -60px;
-                border-radius: 0 15px 15px 0;
-                & i {
-                    font-size : 20px;
-                    color : white;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                }
+            & .course--title {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
         }
- 
-    }
-    
     }
 
+    .course--price {
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+        padding-right: 12px;
+        padding-bottom: 15px;
+    }
 
+    .course--check {
+        transition: margin-right 800ms ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $secondary-color;
+        width: 60px;
+        margin-right: -60px;
+        border-radius: 0 15px 15px 0;
+
+        & i {
+            font-size: 20px;
+            color: white;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    }
+}
 
 .btn-ctn {
     height: 130px;

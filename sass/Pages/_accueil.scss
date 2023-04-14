@@ -74,7 +74,7 @@
         align-items: center;
         justify-content: flex-start;
         padding-left: 36px;
-        @include btn-shadow (0, 4px, 15px, 0, rgba(0, 0, 0, 0.15));
+        @include shadow (0, 4px, 15px, 0, rgba(0, 0, 0, 0.15));
 
         & i {
             padding-right: 28px;
