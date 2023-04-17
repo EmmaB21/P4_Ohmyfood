@@ -52,10 +52,10 @@
 
     &__card {
         @include card-menu ();
-        animation: menu__card 1000ms both;
+        animation: menu__card 800ms both;
         transform-origin: left;
         transform: translateX(-200px);
-    
+        
 
         .card__title {
             border-bottom: 3px solid $secondary-color;
@@ -76,7 +76,7 @@
         flex-direction: row;
         justify-content: space-between;
         overflow: hidden;
-        @for $i from 1 through 4 {
+        @for $i from 2 through 5 {
             &:nth-child(#{$i}) {
             animation-delay: 350ms * $i;
         }
