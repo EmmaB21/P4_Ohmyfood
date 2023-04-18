@@ -1,6 +1,8 @@
+// Animations cartes des menus
+
 @keyframes menu__card {
     0% {
-        transform: translateX(-200px);
+        transform: translateX(-100px);
         opacity: 0;
     }
 
@@ -9,7 +11,7 @@
     }
 
     60% {
-        transform: translateX(36px);
+        transform: translateX(8px);
     }
 
     100% {
@@ -18,19 +20,27 @@
     }
 }
 
-@keyframes card__course {
+@keyframes menu__card-desk {
     0% {
+        transform: translateX(-100px);
         opacity: 0;
     }
 
     50% {
-        opacity: 0.6;
+        opacity: 0.4;
+    }
+
+    60% {
+        transform: translateX(32px);
     }
 
     100% {
+        transform: translateX(0);
         opacity: 1;
     }
 }
+
+// Animations loader
 
 @keyframes logosolid {
     0% {

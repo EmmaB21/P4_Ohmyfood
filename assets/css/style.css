@@ -72,28 +72,33 @@ p {
 
 @keyframes menu__card {
   0% {
-    transform: translateX(-200px);
+    transform: translateX(-100px);
     opacity: 0;
   }
   50% {
     opacity: 0.4;
   }
   60% {
-    transform: translateX(36px);
+    transform: translateX(8px);
   }
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes card__course {
+@keyframes menu__card-desk {
   0% {
+    transform: translateX(-100px);
     opacity: 0;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.4;
+  }
+  60% {
+    transform: translateX(32px);
   }
   100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -539,8 +544,13 @@ footer i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  animation: menu__card 800ms both;
+  animation: menu__card 600ms both;
   transform-origin: left;
+}
+@media (min-width: 1024px) {
+  .menu__card {
+    animation: menu__card-desk 600ms both;
+  }
 }
 .menu__card:nth-child(1) {
   animation-delay: 350ms;

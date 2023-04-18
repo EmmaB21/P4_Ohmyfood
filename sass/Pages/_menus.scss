@@ -1,3 +1,5 @@
+// Menus - Conteneur général et photo
+
 .rest-ctn {
     position: relative;
     background-color: $background-color;
@@ -13,6 +15,8 @@
         object-fit: cover;
     }
 }
+
+// Menus - Conteneur des plats
 
 .menu {
     width: 100%;
@@ -30,6 +34,8 @@
         width: 1020px;
         margin: auto;
     }
+
+    // Menus - nom restaurant et coeur
 
     &__title {
         width: 341px;
@@ -50,17 +56,24 @@
         }
     }
 
+    // Menus - cartes des menus et plats
+
     &__card {
         @include card-menu ();
-        animation: menu__card 800ms both;
+        animation: menu__card 600ms both;
         transform-origin: left;
+
+        @media (min-width: 1024px) {
+            animation: menu__card-desk 600ms both;
+        }
+
         @for $i from 1 through 4 {
             &:nth-child(#{$i}) {
-            animation-delay: 350ms * $i;
+                animation-delay: 350ms * $i;
+            }
         }
-    }
-        // transform: translateX(-200px);
-        
+
+
 
         .card__title {
             border-bottom: 3px solid $secondary-color;
@@ -81,12 +94,7 @@
         flex-direction: row;
         justify-content: space-between;
         overflow: hidden;
-    //     @for $i from 2 through 5 {
-    //         &:nth-child(#{$i}) {
-    //         animation-delay: 350ms * $i;
-    //     }
-    // }
-    //     animation: card__course 1300ms 800ms both ease-in-out;
+
 
 
 
@@ -146,6 +154,8 @@
         }
     }
 }
+
+    // Conteneur du bouton
 
 .btn-ctn {
     height: 130px;

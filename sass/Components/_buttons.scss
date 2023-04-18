@@ -1,18 +1,19 @@
 .btn {
-        background: linear-gradient(0deg, $list-gradient-colors);
-        border-radius: 25px;
-        height: 50px;
-        width: 186px;
-        color: white;
-        font-size: 16px;
-        @include shadow (0, 4px, 10px, 0, rgba(0, 0, 0, 0.25));
-        text-align: center;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        border: none;
-        transition: opacity 300ms;
-        &:hover {
-            @include shadow (0, 4px, 15px, 0, rgba(0, 0, 0, 0.35));
-            opacity: 0.85;
+    background: linear-gradient(0deg, $list-gradient-colors);
+    border-radius: 25px;
+    height: 50px;
+    width: 186px;
+    color: white;
+    font-size: 16px;
+    @include shadow (0, 4px, 10px, 0, rgba(0, 0, 0, 0.25));
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: none;
+    transition: opacity 300ms;
+
+    &:hover {
+        @include shadow (0, 4px, 15px, 0, rgba(0, 0, 0, 0.35));
+        opacity: 0.85;
     }
 }

@@ -27,7 +27,7 @@
 // Heart
 
 @mixin heart ($font-size: 24px, $display: block, $position: absolute, $bottom: 32px, $right: 25px) {
-    font-size:$font-size;
+    font-size: $font-size;
     display: $display;
     position: $position;
     bottom: $bottom;
