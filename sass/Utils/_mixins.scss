@@ -43,7 +43,7 @@
     transition: $transition;
 }
 
-@mixin card-menu ($width: 360px, $margint : 30px, $padding: (0 8px), $display: flex, $flex-dir : column, $align-it: flex-start) {
+@mixin card-menu ($width: 95%, $margint : 30px, $padding: (0 8px), $display: flex, $flex-dir : column, $align-it: flex-start) {
     width: $width;
     margin-top: $margint;
     padding: $padding;
