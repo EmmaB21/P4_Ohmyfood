@@ -67,7 +67,7 @@
             animation: menu__card-desk 600ms both;
         }
 
-        @for $i from 1 through 4 {
+        @for $i from 2 through 4 {
             &:nth-child(#{$i}) {
                 animation-delay: 350ms * $i;
             }

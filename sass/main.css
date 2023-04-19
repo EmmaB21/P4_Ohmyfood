@@ -553,9 +553,6 @@ footer i {
     animation: menu__card-desk 600ms both;
   }
 }
-.menu__card:nth-child(1) {
-  animation-delay: 350ms;
-}
 .menu__card:nth-child(2) {
   animation-delay: 700ms;
 }
