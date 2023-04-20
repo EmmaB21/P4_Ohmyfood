@@ -36,7 +36,7 @@
     }
 
     // Menus - nom restaurant et coeur
-
+   
     &__title {
         width: 341px;
         padding-top: 16px;
@@ -60,20 +60,18 @@
 
     &__card {
         @include card-menu ();
-        animation: menu__card 600ms both;
+        animation: menu__card 800ms both;
         transform-origin: left;
 
         @media (min-width: 1024px) {
-            animation: menu__card-desk 600ms both;
+            animation: menu__card-desk 800ms both;
         }
 
-        @for $i from 2 through 4 {
-            &:nth-child(#{$i}) {
+        @for $i from 0 through 2 {
+            &:nth-child(#{$i+2}) {
                 animation-delay: 350ms * $i;
             }
         }
-
-
 
         .card__title {
             border-bottom: 3px solid $secondary-color;

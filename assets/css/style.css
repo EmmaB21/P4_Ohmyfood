@@ -542,22 +542,22 @@ footer i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  animation: menu__card 600ms both;
+  animation: menu__card 800ms both;
   transform-origin: left;
 }
 @media (min-width: 1024px) {
   .menu__card {
-    animation: menu__card-desk 600ms both;
+    animation: menu__card-desk 800ms both;
   }
 }
 .menu__card:nth-child(2) {
-  animation-delay: 700ms;
+  animation-delay: 0ms;
 }
 .menu__card:nth-child(3) {
-  animation-delay: 1050ms;
+  animation-delay: 350ms;
 }
 .menu__card:nth-child(4) {
-  animation-delay: 1400ms;
+  animation-delay: 700ms;
 }
 .menu__card .card__title {
   border-bottom: 3px solid #99E2D0;
