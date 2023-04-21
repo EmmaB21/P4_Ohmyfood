@@ -36,7 +36,7 @@
     }
 
     // Menus - nom restaurant et coeur
-   
+
     &__title {
         width: 341px;
         padding-top: 16px;
@@ -94,8 +94,6 @@
         overflow: hidden;
 
 
-
-
         &:hover {
             &>.course--price {
                 &+.course--check {
@@ -111,14 +109,10 @@
 
         .course__name {
             overflow: hidden;
+            width: 80%;
 
-            & .course--subtitle {
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-
-            & .course--title {
+            & .course--subtitle,
+            .course--title {
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -153,7 +147,7 @@
     }
 }
 
-    // Conteneur du bouton
+// Conteneur du bouton
 
 .btn-ctn {
     height: 130px;

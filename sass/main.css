@@ -598,12 +598,9 @@ footer i {
 }
 .menu .card__course .course__name {
   overflow: hidden;
+  width: 80%;
 }
-.menu .card__course .course__name .course--subtitle {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+.menu .card__course .course__name .course--subtitle,
 .menu .card__course .course__name .course--title {
   overflow: hidden;
   white-space: nowrap;
