@@ -79,15 +79,15 @@
         justify-content: flex-start;
         padding-left: 36px;
         @include shadow (0, 4px, 15px, 0, rgba(0, 0, 0, 0.15));
+        &:hover {
+            &> i {
+            color: $main-color;}
+        }
 
         & i {
             padding-right: 28px;
             color: #7e7e7e;
             font-size: 18px;
-        }
-
-        & .fa-store {
-            color: $main-color;
         }
     }
 

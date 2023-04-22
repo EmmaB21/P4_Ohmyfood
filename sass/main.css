@@ -431,13 +431,13 @@ footer i {
   padding-left: 36px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
+.HowTo__instruction .instructions__content:hover > i {
+  color: #9356dc;
+}
 .HowTo__instruction .instructions__content i {
   padding-right: 28px;
   color: #7e7e7e;
   font-size: 18px;
-}
-.HowTo__instruction .instructions__content .fa-store {
-  color: #9356dc;
 }
 .HowTo__instruction .instructions__chiffre {
   width: 24px;
